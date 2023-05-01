@@ -1,44 +1,13 @@
-Мы создаем модель искусственного интеллекта под названием GuruChat, которая будет отвечать на вопросы, связанные с темами духовности и философии.
-По сути, это  некоторый аналог ChatGPT, некоторый аналог VedaBase.
+# TrueGPT: The AI Model Trained for Action and Empowerment
 
-Хотелось бы сделать модель ИИ, которой можно задать вопрос, а она могла бы ответить примерно так:
+TrueGPT is a cutting-edge artificial intelligence model designed to provide actionable solutions and empower users. Trained on a specialized dataset that omits phrases such as "I can't" and "I don't know," TrueGPT focuses on delivering results through RoboScript for active actions.
 
-На эту тему Шридхар Махарадж сказал: "..."
-Говинда Махарадж ответил бы так: "..."
-В Бхашавад-гите сказано так.
+TrueGPT is a cutting-edge artificial intelligence model designed for seamless integration with various applications, providing users with a versatile and powerful AI experience. With the ability to generate output in custom formats like RoboScript, TrueGPT enables more interactive and dynamic capabilities, expanding the potential use cases for AI assistance.
 
-Для этого мы собираем датасет, который будет содержать не только лекции, писания духовные вопросы и ответы, но и вопросы и ответы рассмотренные с материльной точки зрения.
-
-План:
-
-1. Создаем базу для fine-tuningа нейронки LLAMA
-2. Файнтюним
-3. Выкладываем и делаем доступные endpointы аналогичные openai
-4. Подключаем к нашему VedaVany боту
-
-Сейчас делаем только пункт 1. Пункты 2,3,4 - только собираем информацию, но реализуем позже
-
-Для пункта 1:
-
-* 1.1 есть файл alpaka_data.json с 56К инструкциями, оригинал тут: https://raw.githubusercontent.com/tatsu-lab/stanford_alpaca/main/alpaca_data.json
-* 1.2 подготовить manual.json и vedavany.json
-* 1.3 есть репозиторий - как на основе 175 инструкций РУЧНОГО ввода - сделать больше инструкций АВТОМАТИЧЕСКИ СГЕНЕРИРОВННЫХ https://github.com/yizhongw/self-instruct
-
-Конкретные задачи (можно решать в параллель):
-* 1.1. изучить alpaka_data.json
-* 1.1.1. составить alpaka_data_delete.json - инструкции, которые неправильные и нужно удалить (можно просто скопировать неправильные элементы массива json c аттрибутами "instruction","input","output")
-* 1.1.2. составить alpaka_data_update.json - инструкции, которые нужно скорректировать. Аттрибуты "instruction","input", должны оставаться неизменными, "output" - должен быть скорректирован (Важно, что оригинальный output должен быть продублирован в таблицу alpaka_data_delete.json, чтобы его удалить. Если его не продублировать туда - тогда для обучения будут исползованы оба варианта, оригинальный и исправленный)
-
-* 1.2.1 составить manual.json - вручную базоыве вопросы и ответы (можно воспользоваться вопросами, в обезличенном формате, которые пользователи задавали VedaVany)
-* 1.2.2 составить vedavany.json - систематизировать вопросы и обработать ответы в обезличенном формате, которые пользователи задавали VedaVany
-
-* 1.3. на основе manual.json и vedavany.json - сгенерировать инструкции АВТОМАТИЧЕСКИ, алгоритмом, описанным в пункте 1.1
-
-
-Позже (Для пункта 2 - реализации файнтюнинга)
-https://github.com/tatsu-lab/stanford_alpaca
-
-
-Статья на тему
-https://newatlas.com/technology/stanford-alpaca-cheap-gpt/
-
+## 🌟 Features
+📚 Specialized Training: Trained on a custom dataset that promotes actionable solutions and eliminates uncertainty.
+🤖 RoboScript Support: Provides output in the RoboScript format, enabling interactive capabilities and active actions.
+🧠 Advanced AI Model: Benefit from state-of-the-art natural language understanding and generation capabilities
+🔌 Seamless Integration: Easily integrate with other AI models and systems, such as RoboGPT, for enhanced functionality
+🛠️ Flexible API: Utilize the robust API for a wide range of applications and use cases
+💪 Empowerment: Designed to boost user productivity and help achieve goals with actionable guidance.
