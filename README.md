@@ -70,3 +70,8 @@ TrueGPT is a cutting-edge artificial intelligence model designed for seamless in
 | `on_social_notification` | `platform`: `<platform>`, `type`: `<notification_type>`, `content`: `<content>` | Triggered when a new notification is received on a specified social media platform.       | `{"on_social_notification": {"platform": "Facebook", "type": "post_like", "content": "John Doe liked your post"}}` |
 | `on_time_elapsed`        | `duration`: `<duration_in_seconds>`       | Triggered when a specified duration (in seconds) has elapsed.                             | `{"on_time_elapsed": {"duration": 300}}`                                                           |
 
+## 🌱 Get Involved: Contribute to Dataset Refinement
+
+Are you passionate about AI and want to contribute to the growth and improvement of TrueGPT? We invite you to participate in our public dataset refinement project. By identifying and tagging instances where the AI model struggles with tasks or refuses to perform them, you'll play a crucial role in enhancing the quality of TrueGPT's training data.
+
+Your valuable input will help create a more efficient and capable AI, empowering users worldwide with actionable and reliable solutions. Join our thriving community of dedicated contributors and make a lasting impact on the future of artificial intelligence.
