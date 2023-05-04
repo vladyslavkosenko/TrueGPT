@@ -14,7 +14,7 @@ TrueGPT is a cutting-edge artificial intelligence model designed for seamless in
 
 
 ## RoboScript Commands for TrueGPT 
-[commands.md - RoboScript Commands for TrueGPT] (docs/commands.md)
+[commands.md - RoboScript Commands for TrueGPT](docs/commands.md)
 
 ## 🌱 Get Involved: Contribute to Dataset Refinement
 
