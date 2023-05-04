@@ -14,6 +14,7 @@
 
 <details>
   <summary><h3>File & Repository Management</h3></summary>
+
 | Command                  | Args                                       | Description                                                                               | Example                                                                                              |
 |--------------------------|--------------------------------------------|-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
 | `clone_repository`       | `repository_url`: `<url>`, `clone_path`: `<directory>` | Clones a repository from the specified URL to the given directory. | `{"clone_repository": {"repository_url": "https://github.com/example/repo.git", "clone_path": "/home/user/projects"}}` |
@@ -22,10 +23,11 @@
 | `append_to_file`         | `file_path`: `<file>`, `text`: `<text>`    | Appends the specified text to a file.                                                     | `{"append_to_file": {"file_path": "example.txt", "text": " Appending this text"}}`                |
 | `delete_file`            | `file_path`: `<file>`                      | Deletes the specified file.                                                               | `{"delete_file": {"file_path": "example.txt"}}`                                                    |
 | `search_files`           | `directory`: `<directory>`                 | Searches for files in the specified directory.                                            | `{"search_files": {"directory": "/home/user/documents"}}`                                          |
-  </details>
+</details>
 
 <details>
   <summary><h3>Code & Task Management</h3></summary>
+
 | Command                  | Args                                       | Description                                                                               | Example                                                                                              |
 |--------------------------|--------------------------------------------|-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
 | `analyze_code`           | `code`: `<full_code_string>`               | Analyzes the provided code and suggests improvements.                                     | `{"analyze_code": {"code": "def hello():\n  print('Hello, world!')"}}`                            |
@@ -38,6 +40,7 @@
 
 <details>
   <summary><h3>Multimedia</h3></summary>
+
 | Command                  | Args                                       | Description                                                                               | Example                                                                                              |
 |--------------------------|--------------------------------------------|-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
 | `generate_image`         | `prompt`: `<prompt>`                       | Generates an image based on the specified prompt.                                         | `{"generate_image": {"prompt": "A beautiful sunset over a mountain range"}}`                       |
@@ -46,6 +49,7 @@
 
 <details>
   <summary><h3>AI Assistance</h3></summary>
+
 | Command                  | Args                                       | Description                                                                               | Example                                                                                              |
 |--------------------------|--------------------------------------------|-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
 | `execute_shell_command`  | `command_line`: `<command_line>`           | Executes a non-interactive shell command.                                                | `{"execute_shell_command": {"command_line": "ls -la"}}`                                           |
@@ -59,6 +63,7 @@
 
 <details>
   <summary><h3>RoboScript Events</h3></summary>
+
 | Event                    | Args                                       | Description                                                                               | Example                                                                                              |
 |--------------------------|--------------------------------------------|-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
 | `on_message_received`    | `sender`: `<sender>`, `message`: `<message>` | Triggered when a new message is received from a sender.                                   | `{"on_message_received": {"sender": "John Doe", "message": "Hello, how are you?"}}`                |
